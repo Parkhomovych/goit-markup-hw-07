@@ -18,38 +18,45 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container container">
         <a class="logo link" href="./index.html"
           >Web<span class="header-logo-text">Studio</span></a
         >
         <button type="button" class="header-btn">
-          <svg class="" width="" height="">
-            <use href=""></use>
+          <svg width="32" height="22" aria-label="navigation menu">
+            <use
+              class="svg-open-btn"
+              href="./images/icons.svg#header-btn-open"
+            ></use>
+            <use
+              class="svg-close-btn"
+              href="./images/icons.svg#header-btn-close"
+            ></use>
           </svg>
         </button>
-        <div class="">
+        <div class="header-menu">
           <nav class="nav">
             <ul class="nav-list list">
-              <li class="nav-item item">
+              <li class="nav-item">
                 <a class="nav-link active link" href="./index.html">Studio</a>
               </li>
-              <li class="nav-item item">
+              <li class="nav-item">
                 <a class="nav-link link" href="./portfolio.html">Portfolio</a>
               </li>
-              <li class="nav-item item">
+              <li class="nav-item">
                 <a class="nav-link link" href="">Contacts</a>
               </li>
             </ul>
           </nav>
           <address class="contact">
             <ul class="contact-list list">
-              <li class="contact-item item">
+              <li class="contact-item">
                 <a class="contact-link link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="contact-item item">
+              <li class="contact-item">
                 <a class="contact-link link" href="tel:+110001111111"
                   >+11 (000) 111-11-11</a
                 >
@@ -58,63 +65,63 @@
           </address>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero">
         <div class="hero-container container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button" data-modal-open>
+          <button class="hero-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
       </section>
       <section class="desc">
         <div class="desc-container container">
-          <h2 hidden class="-desctitle">something</h2>
+          <h2 class="desc-title visually-hidden">something</h2>
           <ul class="desc-list list">
-            <li class="icon-antenna item">
+            <li class="desc-item">
               <div class="desc-svg">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#antenna"></use>
                 </svg>
               </div>
-              <h3 class="desc-title title">Strategy</h3>
+              <h3 class="desc-subtitle">Strategy</h3>
               <p class="desc-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
             </li>
-            <li class="icon-clock item">
+            <li class="desc-item">
               <div class="desc-svg">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#clock"></use>
                 </svg>
               </div>
-              <h3 class="desc-title title">Punctuality</h3>
+              <h3 class="desc-subtitle">Punctuality</h3>
               <p class="desc-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
             </li>
-            <li class="icon-diagram item">
+            <li class="desc-item">
               <div class="desc-svg">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#diagram"></use>
                 </svg>
               </div>
-              <h3 class="desc-title title">Diligence</h3>
+              <h3 class="desc-subtitle">Diligence</h3>
               <p class="desc-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
             </li>
-            <li class="icon-astronaut item">
+            <li class="desc-item">
               <div class="desc-svg">
                 <svg width="64" height="64">
                   <use href="./images/icons.svg#astronaut"></use>
                 </svg>
               </div>
-              <h3 class="desc-title title">Technologies</h3>
+              <h3 class="desc-subtitle">Technologies</h3>
               <p class="desc-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
@@ -127,25 +134,25 @@
         <div class="container">
           <h2 class="doing-title title">What are we doing</h2>
           <ul class="doing-list list">
-            <li class="item">
+            <li class="doing-item">
               <img
-                class="item-img"
+                class="doing-img"
                 src="./images/hw-1/what-are-we-doing/computer.jpg"
                 alt="computer"
                 width="360"
               />
             </li>
-            <li class="item">
+            <li class="doing-item">
               <img
-                class="item-img"
+                class="doing-img"
                 src="./images/hw-1/what-are-we-doing/more-phones.jpg"
                 alt="more-phones"
                 width="360"
               />
             </li>
-            <li class="item">
+            <li class="doing-item">
               <img
-                class="item-img"
+                class="doing-img"
                 src="./images/hw-1/what-are-we-doing/one-phone.jpg"
                 alt="one-phone"
                 width="360"
@@ -400,31 +407,31 @@
         </div>
         <div class="social-box">
           <p class="footer-social">Social media</p>
-          <ul class="footer-list list">
-            <li class="item">
-              <a href="" class="footer-link link">
-                <svg class="footer-svg" width="24" height="24">
+          <ul class="footer-social-list list">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link link">
+                <svg class="footer-social-svg" width="24" height="24">
                   <use class="centre" href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="footer-link link">
-                <svg class="footer-svg" width="24" height="24">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link link">
+                <svg class="footer-social-svg" width="24" height="24">
                   <use class="centre" href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="footer-link link">
-                <svg class="footer-svg" width="24" height="24">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link link">
+                <svg class="footer-social-svg" width="24" height="24">
                   <use class="centre" href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="item">
-              <a href="" class="footer-link link">
-                <svg class="footer-svg" width="24" height="24">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link link">
+                <svg class="footer-social-svg" width="24" height="24">
                   <use class="centre" href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
@@ -532,6 +539,7 @@
         </form>
       </div>
     </div> -->
+    <script src="./js/mobail-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
