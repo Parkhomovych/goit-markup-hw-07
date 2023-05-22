@@ -445,8 +445,8 @@ button {
   }
 }
 .hero-btn {
-  width: 165px;
-  height: 40px;
+  width: 169px;
+  height: 56px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -803,6 +803,7 @@ button {
 .footer-logo {
   display: block;
   text-align: center;
+  margin-bottom: 16px;
 }
 @media screen and (min-width: 768px) {
   .footer-logo {
@@ -813,14 +814,17 @@ button {
   width: 268px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 16px;
-  margin-bottom: 72px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+@media only screen and (max-width: 1158px) {
+  .footer-left {
+    margin-bottom: 72px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-text {
@@ -910,7 +914,6 @@ button {
   width: 398px;
   height: 40px;
   padding: 8px 16px;
-  margin-bottom: 16px;
   opacity: 0.3;
 
   border: 1px solid #ffffff;
@@ -918,6 +921,11 @@ button {
   border-radius: 4px;
   background-color: transparent;
   color: var(--white-color);
+}
+@media only screen and (max-width: 767px) {
+  .footer-form-input {
+    margin-bottom: 16px;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-form-input {
@@ -995,7 +1003,7 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 392px;
+  width: 100%;
   min-height: 584px;
   padding: 72px 24px 24px 24px;
 
@@ -1005,6 +1013,11 @@ button {
   border-radius: 4px;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media only screen and (min-width: 428px) {
+  .modal {
+    width: 392px;
+  }
 }
 @media screen and (min-width: 768px) {
   .modal {
@@ -1130,7 +1143,8 @@ button {
 .modal-form-check-desc {
   display: flex;
   align-items: flex-end;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 5px;
 
   margin-bottom: 24px;
   font-size: 12px;
@@ -1138,6 +1152,12 @@ button {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
+/* @media only screen and (max-width: 360px) {
+  .modal-form-check-desc {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+} */
 .modal-form-checkbox {
   width: 16px;
   height: 16px;
@@ -1159,7 +1179,6 @@ button {
 .policy-link {
   color: var(--iris-colro);
   display: block;
-  margin-left: -5px;
 }
 .modal-send-btn {
   width: 169px;
